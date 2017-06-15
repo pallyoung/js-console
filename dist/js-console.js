@@ -73,11 +73,6 @@
 
     }
     
-    
-    
-    
-    
-
     //继承原console的方法
     function ConsoleExtender() {
 
@@ -168,35 +163,7 @@
         this.isInject = isInject
     }
     FakeConsole.prototype.LEVEL = LEVEL;
-    FakeConsole.prototype.setLevel = function (level) {
-        if (this.level === level) {
-            return;
-        }
-        this.level = level;
-        switch (level) {
-            case DEBUG:
-                break;
-            case INFO:
-                _console.debug = noop;
-                break;
-            case WARNING:
-                _console.debug = noop;
-                _console.log = noop;
-                _console.info = noop;
-                break;
-            case ERROR:
-                _console.debug = noop;
-                _console.log = noop;
-                _console.info = noop;
-                _console.warn = noop;
-                break;
-            case SILENT:
-                _console = emptyConsole;
-            default:
-                break;
-        }
-    }
-
+  
 
     var Console = new FakeConsole(LEVEL.DEBUG);
     return Console;
