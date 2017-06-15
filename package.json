@@ -1,0 +1,38 @@
+{
+  "name": "js-console",
+  "version": "0.0.1",
+  "description": "js log module, can be used both in browser and nodejs env",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^3.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pallyoung/js-console.git"
+  },
+  "keywords": [
+    "js",
+    "console",
+    "log",
+    "debug",
+    "nodejs",
+    "web",
+    "browser"
+  ],
+  "author": "Spencer Ye",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pallyoung/js-console/issues"
+  },
+  "homepage": "https://github.com/pallyoung/js-console#readme"
+}
